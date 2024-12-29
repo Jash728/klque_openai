@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .calendar-component {
+      @apply rounded-lg shadow-md p-4 border border-gray-200 bg-white;
+    }
+  
+    .react-calendar__tile {
+      @apply text-gray-800 rounded-lg hover:bg-gray-100 transition-all;
+    }
+  
+    .react-calendar__tile--active {
+      @apply bg-blue-500 text-white rounded-lg;
+    }
+  
+    .react-calendar__navigation button {
+      @apply text-gray-700 hover:text-blue-500 transition-all font-medium;
+    }
+  }
+  
