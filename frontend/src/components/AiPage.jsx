@@ -10,7 +10,7 @@ const AiPage = () => {
 
 const fetchChatHistory = async () => {
   try {
-    const res = await fetch("http://localhost:8081/api/chats"); 
+    const res = await fetch("https://klque-test-1.onrender.com/api/chats"); 
     if (!res.ok) {
       throw new Error(`Error: ${res.status}`);
     }
@@ -74,7 +74,7 @@ const fetchChatHistory = async () => {
       }
 
      
-      const saveChatResponse = await fetch("http://localhost:8081/api/chats", {
+      const saveChatResponse = await fetch("https://klque-test-1.onrender.com/api/chats", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
