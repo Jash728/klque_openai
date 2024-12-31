@@ -3,9 +3,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config/db.js"; 
+import connectDB from "./config/db.js";
 import chatRoutes from "./routes/chatRoutes.js";
-import fetch from "node-fetch"; 
+import fetch from "node-fetch";
 
 
 dotenv.config();
@@ -16,8 +16,8 @@ connectDB();
 const app = express();
 
 
-app.use(cors()); 
-app.use(express.json()); 
+app.use(cors());
+app.use(express.json());
 
 
 app.use("/api/chats", chatRoutes);
