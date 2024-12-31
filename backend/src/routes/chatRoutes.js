@@ -27,7 +27,7 @@ router.post("/", async (req, res) => {
 
   try {
     // Call the Vercel serverless function
-    const openaiResponse = await fetch("https://content-media.vercel.app/api/openai", {
+    const openaiResponse = await fetch("https://klque_test.vercel.app/api/openai", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
