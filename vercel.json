@@ -3,16 +3,14 @@
   "builds": [
     {
       "src": "server.mjs",
-      "use": "@vercel/node",
-      "includeFiles": [
-        "models/**",
-        "routes/**",
-        "db.js"
-      ]
+      "use": "@vercel/node"
     },
     {
-      "src": "src/**/*",
-      "use": "@vercel/static-build"
+      "src": "src/index.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
